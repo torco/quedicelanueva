@@ -21,8 +21,8 @@ class App(object):
         </form>
         """
         boiler = open('boilerplaye.html','r', encoding='utf-8').read().replace('{title}','Qué dice la nueva constitución')
-        body = body + """  </div></div></div><div style="position: absolute; bottom: 0; right: 0; width: 300px; margin:10px; text-align:right;">
-                        ...creado por Tomás Boncompte  </div>"""
+        body = body + """  </div></div></div><div style="position: absolute; bottom: 0; right: 0; width: 100%; margin:10px; text-align:right;">
+                        ...creado por Tomás Boncompte<br><a href="https://github.com/torco/quedicelanueva"> código de dominio público </a>  </div>"""
         f = boiler.replace('{body_itself}',body).replace(': 5%',': 15%')
         return f
     
